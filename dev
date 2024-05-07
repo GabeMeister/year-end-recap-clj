@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Function to display usage information
+usage() {
+  echo "Usage: $0 [--css|--clj]"
+  exit 1
+}
+
+# Check if the number of arguments is 1
+if [ $# -ne 1 ]; then
+  usage
+fi
+
+# Check the flag passed
+case "$1" in
+  css)
+    echo "Processing CSS..."
+    tailwindcss --input ./src/compojure_tutorial/css/input.css --output ./resources/public/css/styles.css -w
+    ;;
+  *)
+    usage
+    ;;
+esac
