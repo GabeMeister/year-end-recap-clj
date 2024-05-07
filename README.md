@@ -1,3 +1,3 @@
-# yer_app
+# Year End Recap
 
-Year End Recap
+Recap the year, with highly amusing Git stats.
