@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+echo "Installing..."
+
+curl -fsSL https://yer-app.fly.dev/scripts/go-hello-world --output go-hello-world
+chmod +x go-hello-world
+echo
+echo "Script has been installed at ./go-hello-world"
+echo
+echo
+./go-hello-world
