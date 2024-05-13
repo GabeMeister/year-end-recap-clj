@@ -5,7 +5,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   curl -fsSL https://yer-app.fly.dev/scripts/yer_linux_amd64 --output year-end-recap
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   echo "Mac operating system detected"
-  curl -fsSL https://yer-app.fly.dev/scripts/yer_darwin_amd64 --output year-end-recap
+  curl -fsSL https://yer-app.fly.dev/scripts/yer_darwin_arm64 --output year-end-recap
 fi
 
 chmod +x year-end-recap
