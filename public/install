@@ -1,11 +1,16 @@
 #!/bin/bash 
 
-echo "Installing..."
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  echo "Linux operating system detected"
+  curl -fsSL https://yer-app.fly.dev/scripts/yer_linux_amd64 --output year-end-recap
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  echo "Mac operating system detected"
+  curl -fsSL https://yer-app.fly.dev/scripts/yer_darwin_amd64 --output year-end-recap
+fi
 
-curl -fsSL https://yer-app.fly.dev/scripts/go-hello-world --output go-hello-world
-chmod +x go-hello-world
+chmod +x year-end-recap
 echo
-echo "Script has been installed at ./go-hello-world"
+echo "Script has been installed at ./year-end-recap"
 echo
 echo
-./go-hello-world
+./year-end-recap
