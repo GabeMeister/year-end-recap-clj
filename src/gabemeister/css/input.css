@@ -20,6 +20,10 @@ body {
   font-family: "Bitter", "Lato", sans-serif;
 }
 
+.font-courier-prime {
+  font-family: "Courier Prime", monospace;
+}
+
 @keyframes slideAndFade {
   0% {
     opacity: 0;

@@ -15,7 +15,7 @@ fi
 case "$1" in
   css)
     echo "Processing CSS..."
-    tailwindcss --input ./src/compojure_tutorial/css/input.css --output ./resources/public/css/styles.css -w
+    npx tailwindcss --input ./src/gabemeister/css/input.css --output ./public/css/styles.css -w
     ;;
   *)
     usage
